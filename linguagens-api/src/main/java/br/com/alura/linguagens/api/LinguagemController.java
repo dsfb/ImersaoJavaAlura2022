@@ -14,11 +14,6 @@ public class LinguagemController {
                     new Linguagem("PHP", "https://github.com/abrahamcalf/programming-languages-logos/raw/master/src/php/php_256x256.png", 2)
             );
 
-    @GetMapping(value="/linguagem-preferida")
-    public String processaLinguagemPreferida() {
-        return "Oi, Java!";
-    }
-
     @GetMapping(value="/linguagens")
     public List<Linguagem> obterLinguagens() {
         return this.linguagens;
