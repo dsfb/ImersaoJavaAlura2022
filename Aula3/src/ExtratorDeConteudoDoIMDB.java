@@ -4,8 +4,8 @@ import java.util.Map;
 
 import br.com.alura.omnistream.service.json.JsonParser;
 
-public class ExtratorDeConteudoDoIMDB {
-	
+public class ExtratorDeConteudoDoIMDB implements ExtratorDeConteudo {
+	@Override
 	public List<Conteudo> extraiConteudos(String json) {
 		
 		// extrair só os dados que interessam (titulo, poster, classificação)

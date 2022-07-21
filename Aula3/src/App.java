@@ -8,12 +8,12 @@ public class App {
 	public static void main(String[] args) throws Exception {
 		// Fazer uma conexão HTTPS e buscar os top 250 filmes.
 
-	    String url = "https://mocki.io/v1/9a7c1ca9-29b4-4eb3-8306-1adb9d159060";
-		ExtratorDeConteudoDoIMDB extrator = new ExtratorDeConteudoDoIMDB();
-		
-		// String url = "https://api.mocki.io/v2/549a5d8b/NASA-APOD";
-		// ExtratorDeConteudoDaNasa extrator = new ExtratorDeConteudoDaNasa();
-		
+	    //String url = "https://mocki.io/v1/9a7c1ca9-29b4-4eb3-8306-1adb9d159060";
+		//ExtratorDeConteudo extrator = new ExtratorDeConteudoDoIMDB();
+
+		String url = "https://api.mocki.io/v2/549a5d8b/NASA-APOD";
+		ExtratorDeConteudo extrator = new ExtratorDeConteudoDaNasa();
+
 		var http = new ClienteHttp();
 		String json = http.buscaDados(url);
 
