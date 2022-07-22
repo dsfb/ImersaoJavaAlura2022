@@ -2,8 +2,6 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 
-import br.com.alura.omnistream.service.json.JsonParser;
-
 public class ExtratorDeConteudoDoIMDB implements ExtratorDeConteudo {
 	@Override
 	public List<Conteudo> extraiConteudos(String json) {
