@@ -2,10 +2,11 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 
-public class ExtratorDeConteudoDoIMDB implements ExtratorDeConteudo {
+public class ExtratorDeConteudoComum implements ExtratorDeConteudo {
+
 	@Override
 	public List<Conteudo> extraiConteudos(String json) {
-		
+
 		// extrair só os dados que interessam (titulo, poster, classificação)
 		// extrair, pegar, parsear...
 		JsonParser parser = new  JsonParser();
@@ -26,8 +27,9 @@ public class ExtratorDeConteudoDoIMDB implements ExtratorDeConteudo {
 			// e o nome no singular para o objeto! 
 			conteudos.add(conteudo);
 		}
-		
+
 		return conteudos;
+
 	}
-	
+
 }
