@@ -1,0 +1,93 @@
+
+Aula 05 - Publicando nossa API no Cloud
+
+
+Links, dicas e notas de aula
+
+Boas-vindas à quinta e última aula da Imersão Java! Foi incrível ter você estudando com a gente durante esta semana... mas ainda temos mais um passo! Vamos lá?
+
+Para fechar com chave de ouro, vamos tornar nossa aplicação acessível por qualquer pessoa, fazendo o deploy na nuvem. Além disso, vamos gerar figurinhas a partir do conteúdo dessa nossa API.
+
+
+
+Código da Aula
+
+<Clique aqui>[https://github.com/alura-cursos/imersao-java/tree/aula5] para acessar o código completo da aula.
+
+
+
+Links citados
+
+   * <Dev em T: especialista x generalista>[https://www.alura.com.br/dev-em-t].
+   * Site do <Heroku>[https://www.heroku.com/], que é um PaaS (plataforma como serviço).
+   * Documentação sobre a <Oracle Cloud>[https://docs.oracle.com/pt-br/iaas/Content/home.htm].
+   * Artigo: <Como elaborar um bom arquivo Readme para os seus projetos>[https://www.alura.com.br/artigos/escrever-bom-readme].
+
+
+Desafios
+
+    1. Compartilhe com seus amigos a sua URL do Heroku, para que eles possam consumir a sua API (com o padrão de atributos title e image) e gerar figurinhas do conteúdo que você utilizou (linguagens de programação, filmes, músicas);
+    2. Colocar a aplicação no cloud da Oracle;
+    3. Implementar algum mecanismo de votação na API, para que outros amigos votem nas linguagens preferidas para que se possa fazer um ranking;
+    4. Desafio supremo: Evoluir o projeto das três primeiras aula para que ele gere um bundle de stickers, para que se possa fazer o download e já incluir vários stickers no WhatsApp; Usar os conhecimentos aprendidos em alguma imersão React da Alura e fazer uma aplicação front-end para gerar esse bundle, onde possa se passar a URL do conteúdo e já visualizar os stickers;
+
+
+Material complementar
+
+   * Artigo da Alura <“Heroku, Vercel e outras opções de Cloud como plataforma”>[https://www.alura.com.br/artigos/heroku-vercel-outras-opcoes-cloud-plataforma].
+   * Podcast Hipters.Tech <“Integração Contínua, Deploy Contínuo e Github Actions”>[https://www.alura.com.br/podcast/hipsterstech-integracao-continua-deploy-continuo-e-github-actions-hipsters-213-a335].
+   * Pesquisa da JetBrains, empresa que desenvolve a IDE IntelliJ, <sobre o ecossistema Java em 2021>[https://www.jetbrains.com/lp/devecosystem-2021/java/].
+
+
+Serviços fora do ar?
+
+A Imersão está tão grande que estamos derrubando algumas APIs... Mas não se preocupe! Em nossa <comunidade no Discord>[https://discord.com/invite/XKt5CD5MDh] nós colocaremos alternativas e resoluções caso isso aconteça. Além disso, os alunos e alunas participando da Imersão também estão criando soluções para esses casos! É a comunidade da Imersão Java vivenciando um ambiente real de desenvolvimento!
+
+
+API da NASA 🌌
+
+Caso a API da NASA fique instável, use as seguintes URLs, que terão os mesmos dados usados na aula:
+
+   * (https://api.mocki.io/v2/549a5d8b/NASA-APOD)
+   * (https://raw.githubusercontent.com/alura-cursos/imersao-java/api/NASA-APOD.json)
+
+Além disso, deixamos uma URLs com imagens fantásticas do James Webb Space Telescope, como o primeiro deep field desse fantástico telescópio! TOPZERA! 🌠 ☄️ 🚀 🛰️ 🔭 🌌
+
+   * (https://api.mocki.io/v2/549a5d8b/NASA-APOD-JamesWebbSpaceTelescope)
+   * (https://raw.githubusercontent.com/alura-cursos/imersao-java/api/NASA-APOD-JamesWebbSpaceTelescope.json)
+
+
+API do IMDB instável
+
+Como a API do IMDB continua muito instável, vamos deixar algumas alternativas de API com um conteúdo semelhante para vocês:
+
+   * (https://api.mocki.io/v2/549a5d8b/Top250Movies)
+   * (https://api.mocki.io/v2/549a5d8b/MostPopularMovies)
+   * (https://api.mocki.io/v2/549a5d8b/MostPopularTVs)
+   * (https://api.mocki.io/v2/549a5d8b/Top250TVs)
+
+Segue também uma solução inspirada na que foi criada ontem pelo instrutor Alex Felipe:
+
+   * (https://raw.githubusercontent.com/alura-cursos/imersao-java/api/TopMovies.json)
+   * (https://raw.githubusercontent.com/alura-cursos/imersao-java/api/MostPopularMovies.json)
+   * (https://raw.githubusercontent.com/alura-cursos/imersao-java/api/MostPopularTVs.json)
+   * (https://raw.githubusercontent.com/alura-cursos/imersao-java/api/TopTVs.json)
+
+Para utilizar os endereços alternativos, troque a URL da aula pelas novas URLs:
+
+	// String url = "https://imdb-api.com/en/API/Top250Movies/k_0ojt0yvm";
+	String url = "https://raw.githubusercontent.com/alura-cursos/imersao-java/api/TopMovies.json";
+
+
+Divulgue seu projeto
+
+Mostre seu projeto para o mundo compartilhando no LinkedIn e Instagram! Marque a Alura (@AluraOnline) e o Paulo (@paulo_hipster). Vamos adorar ver seus projetos e acompanhar sua evolução! Lembre-se de utilizar a hashtag "#ImersãoJava" para seu projeto ter ainda mais alcance.
+
+Ah, e não esqueça de colocar a tag "ImersaoJava" dentro do seu projeto no GitHub. É só clicar na engrenagem que aparece na seção About e colocar a tag "ImersaoJava" dentro do campo Topics. Queremos ver seu portfólio!
+
+
+Discord
+
+Participe do Discord para tirar suas dúvidas e conhecer outras pessoas que estão mergulhando em Java junto com você! <Clique aqui>[https://discord.com/invite/XKt5CD5MDh] para entrar.
+
+Bons estudos e até a próxima aula!

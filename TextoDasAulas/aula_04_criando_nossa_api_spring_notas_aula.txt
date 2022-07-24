@@ -1,0 +1,101 @@
+
+Aula 04 - Criando nossa própria API com Spring
+
+
+Links, dicas e notas de aula
+
+Boas-vindas à quarta aula da Imersão Java!
+
+Agora vamos construir uma API REST para expor nosso próprio conteúdo, utilizando ferramentas profissionais como o Spring Framework e um banco de dados NoSQL.
+
+
+
+Código da Aula
+
+<Clique aqui>[https://github.com/alura-cursos/imersao-java/tree/aula4] para acessar o código da aula.
+
+
+
+Links citados
+
+    * <Documentação do Spring Framework>[https://spring.io/].
+    * Link para <iniciar um projeto utilizando Spring>[https://start.spring.io/].
+    * Link para <download do Maven>[https://maven.apache.org/download.cgi].
+    * Link para <download do Postman>[https://www.postman.com/].
+    * Página para fazer o <registro e começar a utilizar o MongoDb Atlas>[https://www.mongodb.com/cloud/atlas/register].
+    * GitHub com os <logos das linguagens de programação>[https://github.com/abrahamcalf/programming-languages-logos].
+    * Artigo sobre o <pack de stickers da Alura para Whatsapp e Telegram>[https://www.alura.com.br/artigos/stickers-dev-aluraverso-whatsapp-telegram].
+
+
+Desafios
+
+    1. Finalizar o CRUD (Create, Read, Update e Delete) para que se possa atualizar e excluir uma linguagem cadastrada;
+    2. Devolver a listagem ordenada pelo ranking;
+    3. Criar na sua API um modelo de entidade com nomes diferentes de title e image e criar seu próprio extrator de informações personalizado OU, manter com o nome title e image e traduzir para que seja retornado como título e imagem através do uso de DTO (Data Transfer Object);
+    4. Retornar o status 201 quando um recurso (linguagem, no nosso caso) for cadastrado através do POST;
+    5. Desafio supremo: Aplicar modificações parciais no recurso através do método PATCH, por exemplo, modificando o número de votos ou de pessoas que utilizam cada linguagem de programação.
+
+
+Material complementar
+
+   * Primeira aula do curso <“Maven: gerenciamento de dependências e build de aplicações Java”>[https://www.alura.com.br/conteudo/maven-gerenciamento-dependencias-build-aplicacoes-java] da Alura.
+   * Alura+ <“O que é REST?”>[https://www.youtube.com/watch?v=weQ8ssA6iBU&ab_channel=AluraCursosOnline].
+   * Artigo da Alura <“Conceito e fundamentos sobre REST”>[https://www.alura.com.br/artigos/rest-conceito-e-fundamentos].
+   * Podcast <Hipsters.Tech sobre MongoDB>[https://www.hipsters.tech/mongodb-hipsters-ponto-tech-305/].
+   * Hipters.Tube <“O que é SQL e NoSQL?”>[https://www.youtube.com/watch?v=aure5d3B88g&ab_channel=AluraCursosOnline].
+   * Artigo da Alura <“Spring: Conheça esse framework Java”>[https://www.alura.com.br/artigos/spring-conheca-esse-framework-java].
+   * Alura+ <"Introdução ao Postman”>[https://www.youtube.com/watch?v=op81bMbgZXs&ab_channel=AluraCursosOnline].
+
+
+Serviços fora do ar?
+
+A Imersão está tão grande que estamos derrubando algumas APIs... Mas não se preocupe! Em nossa <comunidade no Discord>[https://discord.com/invite/XKt5CD5MDh] nós colocaremos alternativas e resoluções caso isso aconteça. Além disso, os alunos e alunas participando da Imersão também estão criando soluções para esses casos! É a comunidade da Imersão Java vivenciando um ambiente real de desenvolvimento!
+
+
+API da NASA 🌌
+
+Caso a API da NASA fique instável, use as seguintes URLs, que terão os mesmos dados usados na aula:
+
+   * (https://api.mocki.io/v2/549a5d8b/NASA-APOD)
+   * (https://raw.githubusercontent.com/alura-cursos/imersao-java/api/NASA-APOD.json)
+
+Além disso, deixamos uma URLs com imagens fantásticas do James Webb Space Telescope, como o primeiro deep field desse fantástico telescópio! TOPZERA! 🌠 ☄️ 🚀 🛰️ 🔭 🌌
+
+   * (https://api.mocki.io/v2/549a5d8b/NASA-APOD-JamesWebbSpaceTelescope)
+   * (https://raw.githubusercontent.com/alura-cursos/imersao-java/api/NASA-APOD-JamesWebbSpaceTelescope.json)
+
+
+API do IMDB instável
+
+Como a API do IMDB continua muito instável, vamos deixar algumas alternativas de API com um conteúdo semelhante para vocês:
+
+   * (https://api.mocki.io/v2/549a5d8b/Top250Movies)
+   * (https://api.mocki.io/v2/549a5d8b/MostPopularMovies)
+   * (https://api.mocki.io/v2/549a5d8b/MostPopularTVs)
+   * (https://api.mocki.io/v2/549a5d8b/Top250TVs)
+
+Segue também uma solução inspirada na que foi criada ontem pelo instrutor Alex Felipe:
+
+   * (https://raw.githubusercontent.com/alura-cursos/imersao-java/api/TopMovies.json)
+   * (https://raw.githubusercontent.com/alura-cursos/imersao-java/api/MostPopularMovies.json)
+   * (https://raw.githubusercontent.com/alura-cursos/imersao-java/api/MostPopularTVs.json)
+   * (https://raw.githubusercontent.com/alura-cursos/imersao-java/api/TopTVs.json)
+
+Para utilizar os endereços alternativos, troque a URL da aula pelas novas URLs:
+
+	// String url = "https://imdb-api.com/en/API/Top250Movies/k_0ojt0yvm";
+	String url = "https://raw.githubusercontent.com/alura-cursos/imersao-java/api/TopMovies.json";
+
+
+Divulgue seu projeto
+
+Mostre seu projeto para o mundo compartilhando no LinkedIn e Instagram! Marque a Alura (@AluraOnline) e o Paulo (@paulo_hipster). Vamos adorar ver seus projetos e acompanhar sua evolução! Lembre-se de utilizar a hashtag #ImersãoJava para seu projeto ter ainda mais alcance.
+
+Ah, e não esqueça de colocar a tag ImersaoJava dentro do seu projeto no GitHub. É só clicar na engrenagem que aparece na seção About e colocar a tag ImersaoJava dentro do campo Topics. Queremos ver seu portfólio!
+
+
+Discord
+
+Participe do Discord para tirar suas dúvidas e conhecer outras pessoas que estão mergulhando em Java junto com você! <Clique aqui>[https://discord.com/invite/XKt5CD5MDh] para entrar.
+
+Bons estudos e até a próxima aula!

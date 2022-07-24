@@ -1,0 +1,92 @@
+
+Aula 03 - Ligando as pontas, refatoração e orientação a objetos
+
+
+Links, dicas e notas de aula
+
+Boas-vindas à terceira aula da Imersão Java!
+
+Chegou o momento de pegarmos os filmes do IMDb e gerar figurinhas com os pôsteres, aproveitando para melhorar nosso código com as refatorações necessárias para torná-lo mais flexível e fácil de entender.
+
+
+Código da Aula
+
+<Clique aqui>[https://github.com/alura-cursos/imersao-java/tree/aula3] para acessar o código da aula.
+
+
+Links citados
+
+   * Documentação das <APIs da NASA>[https://api.nasa.gov/].
+   * API da <Foto Astronômica do dia da NASA>[https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY].
+   * Artigo na Alura <"Como não aprender Java e Orientação a Objetos: getters e setters">[https://www.alura.com.br/artigos/nao-aprender-oo-getters-e-setters].
+   * Livro <"Design Patterns">[https://www.amazon.com/Design-Patterns-Elements-Reusable-Object-Oriented/dp/0201633612], de 1994, que descreve soluções comuns para problemas recorrentes de como organizar seu código.
+   * Livro <"Refactoring">[https://www.amazon.com/Refactoring-Improving-Design-Existing-Code/dp/0201485672], de 1999, que cataloga maneiras sistemáticas de melhorar o código sem modificar o que é feito.
+
+
+Serviços fora do ar?
+
+A Imersão está tão grande que estamos derrubando algumas APIs... Mas não se preocupe! Em nossa <comunidade no Discord>[https://discord.com/invite/XKt5CD5MDh] nós colocaremos alternativas e resoluções caso isso aconteça. Além disso, os alunos e alunas participando da Imersão também estão criando soluções para esses casos! É a comunidade da Imersão Java vivenciando um ambiente real de desenvolvimento!
+
+
+API da NASA 🌌
+
+Caso a API da NASA fique instável, use as seguintes URLs, que terão os mesmos dados usados na aula:
+
+   * (https://api.mocki.io/v2/549a5d8b/NASA-APOD)
+   * (https://raw.githubusercontent.com/alura-cursos/imersao-java/api/NASA-APOD.json)
+
+Além disso, deixamos uma URLs com imagens fantásticas do James Webb Space Telescope, como o primeiro deep field desse fantástico telescópio! TOPZERA! 🌠 ☄️ 🚀 🛰️ 🔭 🌌
+
+   * (https://api.mocki.io/v2/549a5d8b/NASA-APOD-JamesWebbSpaceTelescope)
+   * (https://raw.githubusercontent.com/alura-cursos/imersao-java/api/NASA-APOD-JamesWebbSpaceTelescope.json)
+
+
+API do IMDB instável
+
+Como a API do IMDB continua muito instável, vamos deixar algumas alternativas de API com um conteúdo semelhante para vocês:
+
+   * (https://api.mocki.io/v2/549a5d8b/Top250Movies)
+   * (https://api.mocki.io/v2/549a5d8b/MostPopularMovies)
+   * (https://api.mocki.io/v2/549a5d8b/MostPopularTVs)
+   * (https://api.mocki.io/v2/549a5d8b/Top250TVs)
+
+Segue também uma solução inspirada na que foi criada ontem pelo instrutor Alex Felipe:
+
+   * (https://raw.githubusercontent.com/alura-cursos/imersao-java/api/TopMovies.json)
+   * (https://raw.githubusercontent.com/alura-cursos/imersao-java/api/MostPopularMovies.json)
+   * (https://raw.githubusercontent.com/alura-cursos/imersao-java/api/MostPopularTVs.json)
+   * (https://raw.githubusercontent.com/alura-cursos/imersao-java/api/TopTVs.json)
+
+Para utilizar os endereços alternativos, troque a URL da aula pelas novas URLs:
+
+	// String url = "https://imdb-api.com/en/API/Top250Movies/k_0ojt0yvm";
+	String url = "https://raw.githubusercontent.com/alura-cursos/imersao-java/api/TopMovies.json";
+
+
+Desafios
+
+   1. Transformar a classe que representa os conteúdos em um Record, disponível a partir do Java 16
+   2. Criar as suas próprias exceções e usá-las na classe que implementa o cliente HTTP
+   3. Usar recursos do Java 8 e posterior, como Streams e Lambdas, para mapear uma lista em uma outra
+   4. Criar uma Enum que une, como configurações, a URL da API e o extrator utilizado
+   5. Desafio supremo: consumir outras APIs que contém imagens, como a da Marvel, que é bem diferente. Repositório com APIs públicas: <clique aqui>[https://github.com/public-apis/public-apis].
+
+
+Material complementar
+
+   * Artigo na Alura <"Como não aprender Java e Orientação a Objetos: herança">[https://www.alura.com.br/artigos/como-nao-aprender-orientacao-a-objetos-heranca].
+   * Podcast Hipsters.tech sobre <Práticas de Orientação a Objetos>[]https://www.alura.com.br/podcast/praticas-de-orientacao-a-objetos-hipsters-129-a453.
+   * Podcast Hipsters.tech sobre <Design Patterns>[https://www.alura.com.br/podcast/design-patterns-hipsters-206-a345].
+   * Podcast Hipsters.tech sobre <SOLID>[https://www.alura.com.br/podcast/solid-codigo-bom-e-bonito-hipsters-ponto-tech-219-a649].
+
+
+Divulgue seu projeto
+
+Mostre seu projeto para o mundo compartilhando no LinkedIn e Instagram! Marque a Alura (@AluraOnline) e o Paulo (@paulo_hipster). Vamos adorar ver seus projetos e acompanhar sua evolução! Lembre-se de utilizar a hashtag #ImersãoJava para seu projeto ter ainda mais alcance.
+
+
+Discord
+
+Participe do Discord para tirar suas dúvidas e conhecer outras pessoas que estão mergulhando em Java junto com você! <Clique aqui>[https://discord.com/invite/XKt5CD5MDh] para entrar.
+
+Ah, e não esqueça de colocar a tag ImersaoJava dentro do seu projeto no GitHub. É só clicar na engrenagem que aparece na seção About e colocar a tag ImersaoJava dentro do campo Topics. Queremos ver seu portfólio!
