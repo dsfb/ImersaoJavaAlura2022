@@ -1,0 +1,56 @@
+{
+	"info": {
+		"_postman_id": "92fb9446-4e96-4d34-baaa-fc81bd90c3b8",
+		"name": "aluraImersaoJava2022",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:8080/linguagens",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/linguagens",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"linguagens"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/linguagens",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\": \"JavaScript\",\r\n    \"image\": \"https://github.com/abrahamcalf/programming-languages-logos/raw/master/src/javascript/javascript_256x256.png\",\r\n    \"ranking\": 4\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/linguagens",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"linguagens"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
